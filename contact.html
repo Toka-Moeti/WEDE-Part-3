@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Concept Media | Contact Us</title>
+    <meta name="description" content="Get in touch with Concept Media. Find our email, phone number, and physical office address in Bloemfontein.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">CONCEPT MEDIA</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section container">
+            <h1>Contact Us</h1>
+
+            <!-- Standard Form opening an email client -->
+            <div class="form-container" style="margin-bottom: 3rem;">
+                <h2>Send Us a Message</h2>
+                <form action="mailto:conceptMedia@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="c_name">Your Name</label>
+                        <input type="text" id="c_name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_email">Your Email</label>
+                        <input type="email" id="c_email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_type">Type of Message</label>
+                        <select id="c_type" name="type">
+                            <option value="General">General Question</option>
+                            <option value="Feedback">Website Feedback</option>
+                            <option value="Support">Technical Issue</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_message">Message</label>
+                        <textarea id="c_message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h2>CONCEPT MEDIA</h2>
+                    <p><strong>Email:</strong> conceptMedia@gmail.com</p>
+                    <p><strong>Phone:</strong> 071 217 2692</p>
+                    <p><strong>Office:</strong> conceptcoza65@gmail.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <h2>Physical Address</h2>
+                    <p>
+                        Westdene Branch<br>
+                        57 2nd Ave<br>
+                        Westdene<br>
+                        Bloemfontein<br>
+                        9301
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Concept Media. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Concept Media | Services for Artists and Brands</title>
+    <meta name="description" content="Discover our talent management, artist booking, brand activation, and event sponsorship services.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">CONCEPT MEDIA</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-content container">
+            <h1>Our Services</h1>
+
+            <!-- JS Dynamic Filtering Buttons -->
+            <div class="filter-container" style="text-align: center; margin-bottom: 2rem; margin-top: 2rem;">
+                <button class="submit-button filter-btn" data-filter="all" style="margin: 5px;">Show All</button>
+                <button class="submit-button filter-btn" data-filter="artist" style="margin: 5px;">For Artists</button>
+                <button class="submit-button filter-btn" data-filter="brand" style="margin: 5px;">For Sponsors & Brands</button>
+            </div>
+
+            <!-- Container for JavaScript to populate dynamically -->
+            <div class="services-grid" id="dynamicServices">
+                <!-- Content will be injected by script.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Concept Media. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

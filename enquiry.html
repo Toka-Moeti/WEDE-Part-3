@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Concept Media | Make an Enquiry</title>
+    <meta name="description" content="Submit an enquiry for artist bookings, brand activations, or sponsorships with Concept Media.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">CONCEPT MEDIA</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section container">
+            <h1>How can we help you?</h1>
+            <h2>Enquiry Form</h2>
+
+            <div class="form-container">
+                <!-- Form for JavaScript Validation & AJAX -->
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label for="fname">First Name *</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (10 digits) *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0712345678" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Enquiry Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="Artist Booking">Artist Booking / Management</option>
+                            <option value="Sponsorship">Event Sponsorship</option>
+                            <option value="Brand Activation">Brand Activation</option>
+                            <option value="General">General Enquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry">Message *</label>
+                        <textarea id="enquiry" name="enquiry" placeholder="Write something..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Enquiry</button>
+                </form>
+                
+                <!-- AJAX Response Container -->
+                <div id="formResponse" style="display:none; color: #111; font-weight: bold; margin-top: 20px; padding: 20px; background: #e8f5e9; border-left: 5px solid green; border-radius: 5px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Concept Media. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
